@@ -1,0 +1,256 @@
+/* background color = #192A32 
+button color = #1F3540
+button shadow = #102129
+x color = #31C4BE
+shadow_X = #31c4b1
+o color = #F2B237
+shadow_0 = #f2b251
+shadow btn color = #A8BEC9
+shadow shadow btn color = #a8beb4
+modal background = #1F3540
+*/
+
+body {
+    background-color: #192A32;
+    height: 100vh;
+    color:white;
+    font-size: 18px;
+}
+
+/* .board{
+    display: none;
+}
+ */
+.turn_btn {
+    background-color: #1F3540;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.x_btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 0;
+    /* block-size: fit-content; */
+}
+
+.o_btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    /* block-size: fit-content; */
+}
+
+.xo_img {
+    max-width: 25px;
+}
+
+.xo_turn_img {
+    max-width: 15px;
+}
+
+.return_btn {
+    background-color: #A8BEC9;
+    color:#154d69;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tile {
+    background-color: #1F3540;
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+    box-shadow: 0px 3px 3px 1px #154d69;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_btns {
+    width: 90px;
+    height: 54px;
+    border-radius: 10px;
+}
+
+.x_turn_btn {
+    background-color: #31C4BE;
+    /* box-shadow: 0px 3px 3px 1px #31c4b1; */
+}
+
+.ties_btn {
+    background-color: #A8BEC9;
+    /* box-shadow: 0px 3px 3px 1px #a8beb4; */
+}
+
+.o_turn_btn {
+    background-color: #F2B237;
+    /* box-shadow: 0px 3px 3px 1px #f2b251; */
+}
+
+.x_turn_img {
+    max-width:20px;
+    margin-top: 2px;
+}
+
+.o_turn_img {
+    max-width: 20px;
+    margin-top: 2px;
+}
+
+/* MODAL WINDOW - WIN CONDITION */
+.modalWindow {
+    display: none;
+    padding: 20px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 50;
+    width: 100%;
+    background-color: #1F3540;
+}
+
+.headWinText{
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.xoWinImg {
+    width: 55px;
+    height: 55px;
+}
+
+.whoWinText {
+    margin: 0;
+    /* margin-left: 24px; */
+    /* font-weight: bold; */
+    color: #31C4BE;
+    font-size: 20px;
+}
+
+.winButtons {
+    margin-top: 25px;
+}
+
+.quitBtn {
+    background-color: #A8BEC9;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 4px 12px;
+    color: #1F3540;
+    font-weight: bold;
+}
+
+.nextRoundBtn {
+    background-color:#F2B237;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 4px 12px;
+    color: #1F3540;
+    font-weight: bold;
+}
+
+/* MODAL WINDOW - START POINT */
+.modalStart {
+    display: none;
+    padding: 20px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 50;
+    width: 100%;
+    background-color: #1F3540;
+}
+
+.chooseOponent {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.friendBtn {
+    background-color: #A8BEC9;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 4px 12px;
+    color: #1F3540;
+    font-weight: bold;
+}
+
+.compBtn {
+    background-color:#F2B237;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    padding: 4px 12px;
+    color: #1F3540;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 19px;
+    }
+    .first_row {
+        height:50px;
+    }
+    .tile {
+        margin-top: 5px;
+        height: 120px;
+        width: 120px;
+    }
+    .row {
+        /* margin-top: 20px; */
+        gap: 5px 10px;
+    }
+    .xo_btn {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .xo_img {
+        max-width: 35px;
+        height: 35px;
+    }
+    .xo_turn_img {
+        max-width: 25px;
+    }
+    .x_turn_btn {
+        width: 100%;
+    }
+    .turn_btn {
+        height: 50px;
+    }
+    .return_btn {
+        width:50px;
+    }
+    .ties_btn {
+        width:100%;
+    }
+    .x_turn_btn {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .ties_btn {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .o_turn_btn {
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .tile_row {
+        margin-top: 40px;
+    }
+    .last_row {
+        height: 57px;
+    }
+}
